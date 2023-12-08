@@ -1,0 +1,42 @@
+funcao inicio()
+	{
+		cadeia numero_secreto = ""
+		cadeia resposta_do_jogador = ""
+		cadeia dica = ""
+		cadeia resposta_dica = ""
+
+		escreva("Qual é o numero secreto?\n")
+		leia (numero_secreto)
+
+		escreva("Digite uma dica:\n")
+		leia(dica)
+
+		limpa()
+
+		escreva("Tente acertar o numero secreto: \n")
+		leia(resposta_do_jogador)
+
+		se(numero_secreto == resposta_do_jogador)
+		escreva("Parabéns. Você acertou!")
+
+		senao
+		escreva("Que pena, você errou!\n")
+		escreva("Você quer uma dica? (S/N)\n")
+		leia(resposta_dica)
+
+		se(resposta_dica == "S")
+		limpa()
+		escreva("A dica é: " + dica)
+
+		escreva("\nTente acertar o numero secreto: \n")
+		leia(resposta_do_jogador)
+
+		se(numero_secreto == resposta_do_jogador)
+		escreva("Parabéns. Você acertou!")
+
+		senao
+		escreva("Que pena, você errou\n")
+
+	
+	}
+}
